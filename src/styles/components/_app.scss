@@ -34,6 +34,7 @@
         margin: 0rem;
         @media (max-width: 47rem) {
             text-align: center;
+            max-width: 19rem;
         }
         text-align: center;
     }
@@ -54,6 +55,9 @@
 .app__exchange__rates__display{
     @extend .common__position;
     font-size: 1.6rem;
+    @media (max-width: 47rem) {
+        font-size: 1.2rem;
+    }
     img {
         filter: invert(100%) sepia(57%) saturate(3%) hue-rotate(33deg) brightness(117%) contrast(100%);
     }
