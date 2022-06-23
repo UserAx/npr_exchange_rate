@@ -1,3 +1,10 @@
+.table__component__wrapper{
+    @media (max-width: 47rem){
+        overflow: scroll;
+        width: 18rem;
+    }
+}
+
 .table__component{
     border-collapse: collapse;
     margin-top: 1.6rem;

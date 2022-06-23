@@ -32,6 +32,10 @@
     h1{
         max-width: 26rem;
         margin: 0rem;
+        @media (max-width: 47rem) {
+            text-align: center;
+        }
+        text-align: center;
     }
     button {
         text-align: center;

@@ -9,7 +9,7 @@ function TableComponent(props: PROPS) {
     const {exchangedRates} = props;
 
     return (
-        <div>
+        <div className="table__component__wrapper">
             <table className="table__component">
                 <thead>
                     <tr>
