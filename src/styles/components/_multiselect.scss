@@ -1,0 +1,97 @@
+.multi__select__component{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    & > span {
+        font-size: 1.2rem;
+    }
+    & > div {
+        padding: 0.6rem;
+        border: 1px solid #ccc;
+        display: inline-block;
+    }
+    & input {
+        width: calc(100% - 20px);
+        font-size: 1.2rem;
+        padding: 0.4rem 0.4rem;
+    }
+}
+
+.multi__select__component__selected{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.6rem;
+    display: block;
+    max-width: 16rem;
+    & > div{
+        display: inline-block;
+        margin-right: 0.4rem;
+        margin-bottom: 0.4rem;
+        border: 1px solid #fcfcfc;
+        padding: 0rem 0.2rem;
+        border-radius: 2px;
+        & > span{
+            font-size: 0.6rem;
+            margin-right: 0.2rem;
+            position: relative;
+            top: -2px;
+        }
+        & > button {
+            padding: 0rem;
+            background: transparent;
+            border: none;
+            & > img {
+                width: 0.8rem;
+                height: 0.8rem;
+                filter: invert(100%) sepia(57%) saturate(3%) hue-rotate(33deg) brightness(117%) contrast(100%);
+            }
+        }
+    }
+}
+
+.selected--edits{
+    padding-bottom: 0.4rem;
+}
+
+.multi__select{
+    position: relative;
+    isolation: isolate;
+}
+
+.multi__select__options{
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 10rem;
+    width: calc(100% - 5px);
+    & > button {
+        width: 100%;
+        display: block;
+        background: #fff;
+        color: #121212;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 0.4rem;
+        word-wrap: break-word;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+}
+
+.multi__select__reset{
+    background: transparent;
+    border: 1px solid #fcfcfc;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    float: right;
+}
+
+.multi__select__validaton{
+    display: inherit;
+    // transform: rotateY(90deg);
+    // transform-origin: top;
+    z-index: -1;
+    position: absolute;
+}

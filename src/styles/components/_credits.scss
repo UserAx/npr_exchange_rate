@@ -1,0 +1,41 @@
+.credits__component{
+    padding: 0rem 1rem;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        li{
+            margin-bottom: 1rem;
+        }
+    }
+    & > h1 {
+        color: #121212;
+        margin: 1rem 0rem;
+        text-align: center;
+    }
+    & > p {
+        color: #121212;
+        max-width: 28rem;
+        font-size: 1.2rem;
+        word-spacing: 2px;
+        line-height: 1.4;
+    }
+}
+
+.credit{
+    display: flex;
+    justify-content: space-between;
+    & > p, a {
+        margin: 0px;
+        color: #121212;
+        font-size: 1.2rem;
+    }
+    & > p{
+        align-self: flex-start;
+        font-weight: 700;
+    }
+    & > a{
+        align-self: flex-end;
+        color: #dc143c;
+        // text-indent: 8rem;
+    }
+}

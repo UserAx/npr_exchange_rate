@@ -1,0 +1,29 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    // font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    // background: url('~assets/background/bg.jpg');
+    // background-size: cover;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+* {
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+span, label, button, h1, h2, p {
+    color: #fcfcfc;
+}

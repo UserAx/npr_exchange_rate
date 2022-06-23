@@ -1,0 +1,17 @@
+{
+    "presets": [
+      // allows to write latest js code 
+      ["@babel/preset-env", {
+        "useBuiltIns": "usage", // or "entry"
+        "corejs": 3,}], 
+      //transform latest js and jsx syntax to core browser supported js, 
+      //plus give react elements name of our js variable
+      "@babel/react", 
+      //babel to process ts, tsx files.
+      "@babel/preset-typescript" 
+    ],
+    "plugins": ["transform-class-properties",
+                "transform-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import"
+            ]
+}

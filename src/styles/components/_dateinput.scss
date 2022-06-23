@@ -1,0 +1,12 @@
+.date__input__component{
+    input {
+        cursor: pointer;
+        padding: 0.4rem;
+        font-size: 1.2rem;
+        text-align: center;
+        border: none;
+        &:disabled {
+            background-color: #ccc;
+        }
+    }
+}

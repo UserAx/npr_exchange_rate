@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "lib": [
+          "dom",
+          "dom.iterable",
+          "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      //specify how to transpile module syntax (i.e. import / export).
+      //for react we can use esnext because we have babel which will auto matically convert our code.
+      //for node, we need commonjs.
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": false,
+      "jsx": "react-jsx"
+  },
+  "include": [
+      "src",
+  ],
+  "exclude": ["node_modules"],
+}
